@@ -22,7 +22,21 @@ public class ProductController {
     };
 
    @PostMapping("/products")
-    public void addProduct(Product p){
-       products.add(p);
+    public void addProduct(Product product){
+       products.add(product);
    }
+
+    public Product findProduct(String name, List<Product> products) {
+
+        for (Product product : products) {
+            if (product.getName().equals(name)) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+    public void deleteProduct(){
+
+    }
 };
