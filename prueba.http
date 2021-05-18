@@ -5,7 +5,7 @@ Accept: application/json
 POST https://bcn-fem-tech-http-store-dani.herokuapp.com/products
 Content-Type: application/x-www-form-urlencoded
 
-name=alpargatas&price=23
+name=sandia&price=5
 
 ###
 
